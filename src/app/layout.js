@@ -23,14 +23,15 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <header className="flex">
-          
-          <nav className=" flex w-full flex justify-center items-center gap-4 py-4">
-            <div className="">Sabrina Shafer</div>
-            <Link href="/">About Me</Link>
-            <Link href="/work">Work</Link>
-            <Link href="/resume">Resume</Link>
-            <Link href="/contact">Get in Touch!</Link>
+        <header className="flex w-full py-4">
+          <nav className="flex w-full justify-between items-center gap-4">
+            <div className="ml-4">Sabrina Shafer</div>
+            <div className="flex gap-4 mr-4">
+              <Link href="/">About Me</Link>
+              <Link href="/work">Work</Link>
+              <Link href="/resume">Resume</Link>
+              <Link href="/contact">Get in Touch!</Link>
+            </div>
           </nav>
         </header>
         {children}
