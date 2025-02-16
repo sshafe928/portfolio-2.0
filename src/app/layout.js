@@ -1,4 +1,5 @@
 import { Geist, Geist_Mono } from "next/font/google";
+import { FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
 import "./globals.css";
 import Link from "next/link";
 
@@ -21,20 +22,43 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#E2EAFC]`}
       >
-        <header className="flex w-full py-4">
-          <nav className="flex w-full justify-between items-center gap-4">
+        <header className="flex w-full py-5 px-6 ">
+          <nav className="flex w-full justify-between items-center gap-4 text-2xl">
             <div className="ml-4">Sabrina Shafer</div>
-            <div className="flex gap-4 mr-4">
+            <div className="flex gap-10 mr-4 text-base">
               <Link href="/">About Me</Link>
               <Link href="/work">Work</Link>
-              <Link href="/resume">Resume</Link>
-              <Link href="/contact">Get in Touch!</Link>
+              <Link href="/resume" >Resume</Link>
+              <Link href="/contact" className="bg-[#E6AF2E] pr-1 pl-1 rounded-full">Get in Touch!</Link>
             </div>
           </nav>
         </header>
+        
         {children}
+
+
+        <footer className=" text-white bg-[#31363F] pb-6 pt-6 motion-translate-y-in-[100%] motion-opacity-in-[0%] motion-blur-in-[5px] motion-duration-[0.45s] motion-duration-[0.53s]/translate">
+          <div className="  space-y-4 ">
+              <div className="flex justify-center  space-x-6">
+                  <Link href="#"><FaInstagram /></Link>
+                  <Link href="#"><FaGithub /></Link>
+                  <Link href="#"><FaLinkedin /></Link>
+              </div>
+      
+              <div className="flex justify-center  ">
+                  <ul className="flex space-x-8">
+                      <li><Link href="#">Contact Me</Link></li>
+                      <li><Link href="#">My Services</Link></li>
+                      <li><Link href="#">Privacy Policy</Link></li>
+                      <li><Link href="#">Terms & Conditions</Link></li>
+                      <li><Link href="#">Career</Link></li>
+                  </ul>
+              </div>
+      
+          </div>
+        </footer>
       </body>
     </html>
   );

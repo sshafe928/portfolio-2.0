@@ -1,8 +1,21 @@
-
+import Image from 'next/image'
 
 const ContactPage = () => {
   return (
-    <div>ContactPage</div>
+    <>
+    <Image/>
+    <div>
+      <h1>Portfolio</h1>
+      <h1>Portfolio</h1>
+      <h1>Portfolio</h1>
+      <h1>Portfolio</h1>
+    </div>
+    <div>
+      <h1>LinkedIn: https://</h1>
+      <h1>GitHub: https://</h1>
+      <h1>Email: https://  </h1>
+    </div>
+    </>
   )
 }
 

@@ -7,11 +7,14 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        
+      },
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
-    },
   },
-  plugins: [],
+  plugins: [require('tailwindcss-motion')],
 };

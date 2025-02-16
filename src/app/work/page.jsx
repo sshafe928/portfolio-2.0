@@ -2,7 +2,11 @@
 
 const WorkPage = () => {
   return (
-    <div>WorkPage</div>
+    <>
+    <h1>Resume</h1>
+
+    
+    </>
   )
 }
 

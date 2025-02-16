@@ -16,6 +16,7 @@ export default function Home() {
         <Link href="https://www.linkedin.com/in/sabrina-shafer-56bb392ba/"><button>linkedin.com/in/sabrina</button></Link>
       </section>
       <section>
+        {/* images and photo */}
         <h2>Contact</h2>
         <ul>
           <li><SlLocationPin />United states</li>
