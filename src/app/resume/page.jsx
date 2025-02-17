@@ -4,7 +4,7 @@ const ResumePage = () => {
   return (
     <>
     <div>
-    <h2 className="text-6xl flex justify-center pt-6 py-12">Resume</h2>
+    <h2 className="text-6xl text-black flex justify-center pt-6 py-12">Resume</h2>
     <section className="justify-items-center pr-20 pl-20">
         <div className="flex flex-col space-y-10 justify-items-end">
 
