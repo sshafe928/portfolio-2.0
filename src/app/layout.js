@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#E2EAFC]`}
       >
-        <header className="flex w-full py-5 px-6 ">
+        <header className="flex w-full py-8 px-6 ">
           <nav className="flex w-full justify-between items-center gap-4 text-2xl">
             <div className="ml-4">Sabrina Shafer</div>
             <div className="flex gap-10 mr-4 text-base">
