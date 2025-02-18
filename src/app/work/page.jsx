@@ -1,4 +1,4 @@
-import Project from '../components/projects'
+
 
 const projects = [
   {
@@ -47,11 +47,7 @@ const WorkPage = () => {
   return (
     <section className="py-12 ">
     <h2 className="text-6xl text-center">Projects</h2>
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-20 mt-8 p-11">
-      {projects.map((project, index) => (
-        <Project key={index} project={project} />
-      ))}
-    </div>
+    
   </section>
 );
 };
