@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#E2EAFC]`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#E2EAFC] overflow-x-hidden`}
       >
         <header className="flex w-full py-8 px-6">
           <nav className="flex w-full justify-between items-center gap-4 text-2xl">
@@ -39,7 +39,7 @@ export default function RootLayout({ children }) {
         {children}
 
 
-        <footer className="bg-[#31363F] pb-6 pt-6 motion-translate-y-in-[100%] motion-opacity-in-[0%] motion-blur-in-[5px] motion-duration-[0.45s] motion-duration-[0.53s]/translate">
+        <footer className="bg-[#31363F] flex-auto w-screen pb-6 pt-6 motion-translate-y-in-[100%] motion-opacity-in-[0%] motion-blur-in-[5px] motion-duration-[0.45s] motion-duration-[0.53s]/translate">
           <div className="space-y-4 ">
               <div className="flex justify-center space-x-6">
                   <Link href="#"><FaInstagram /></Link>

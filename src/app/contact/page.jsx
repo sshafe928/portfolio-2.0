@@ -5,7 +5,7 @@ const ContactPage = () => {
     <>
     <Image/>
     <div>
-      <h1>Portfolio</h1>
+      <h1 className=''>Portfolio</h1>
       <h1>Portfolio</h1>
       <h1>Portfolio</h1>
       <h1>Portfolio</h1>
