@@ -21,16 +21,16 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#E2EAFC] min-h-screen flex flex-col`}>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background min-h-screen flex flex-col`}>
         {/* Header */}
-        <header className="w-full py-8 px-6">
+        <header className="w-full py-8 px-6 font-Unbuntu">
           <nav className="flex w-full justify-between items-center gap-4 text-2xl">
-            <div className="ml-4">Sabrina Shafer</div>
+            <div className="ml-4 text-4xl">Sabrina Shafer</div>
             <div className="flex gap-10 mr-4 text-black text-base">
               <Link href="/">About Me</Link>
               <Link href="/work">Work</Link>
               <Link href="/resume">Resume</Link>
-              <Link href="/contact" className="bg-[#E6AF2E] px-4 py-1 rounded-full hover:bg-[#d9a52c] transition-colors">
+              <Link href="/contact" className="bg-special px-4 py-1 rounded-full hover:bg-special2 transition-colors">
                 Get in Touch!
               </Link>
             </div>
@@ -43,7 +43,7 @@ export default function RootLayout({ children }) {
         </main>
 
         {/* Footer */}
-        <footer className="bg-[#31363F] w-full pb-6 pt-6 mt-auto">
+        <footer className="bg-footer w-full pb-6 pt-6 mt-auto">
           <div className="space-y-4">
             <div className="flex justify-center space-x-6">
               <Link href="#" className="text-white hover:text-gray-300 transition-colors">
@@ -58,7 +58,7 @@ export default function RootLayout({ children }) {
             </div>
 
             <div className="flex justify-center">
-              <ul className="flex flex-wrap justify-center space-x-8 text-white">
+              <ul className="flex flex-wrap justify-center space-x-8 text-white font-Unbuntu">
                 <li><Link href="#" className="hover:text-gray-300 transition-colors">Contact Me</Link></li>
                 <li><Link href="#" className="hover:text-gray-300 transition-colors">My Services</Link></li>
                 <li><Link href="#" className="hover:text-gray-300 transition-colors">Privacy Policy</Link></li>

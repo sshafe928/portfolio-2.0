@@ -21,3 +21,18 @@ body {
 footer {
   color: white;
 }
+
+@font-face {
+  font-family: "Unbuntu" ;
+  src: url("/fonts/Ubuntu-B.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Chae-regular";
+  src: url("/fonts/sf-chaerilidae.regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Chae-outline";
+  src: url("/fonts/sf-chaerilidae.outline.ttf") format("truetype");;
+}
+

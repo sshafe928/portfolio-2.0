@@ -9,13 +9,13 @@ export default function Home() {
     <>
     <div className='flex justify-center '>
     <section className=' m-10 mt-20 '>
-      <h1 className="text-8xl font-bold mb-4">Hello, <br></br>I'm Sabrina!</h1>
+      <h1 className="text-8xl font-bold mb-4 text-title font-Unbuntu">Hello, <br></br>I'm Sabrina!</h1>
       <p className='max-w-xl text-xl'>I am a vocational school student for coding as well as a highschool student.
         My favorite languages are Python and JavaScript, but Tailwind can be enjoyable at times.
         Currently based in the USA, after a gap year for work, I will be continuing my studies at WGU. I am a
         freelancer for online projects but still have an in person job.</p>
         <div className=''>
-        <Link href="https://www.linkedin.com/in/sabrina-shafer-56bb392ba/"><button className='bg-[#4c5d9b] text-[#fff] rounded-full tracking-wide btn-block text-center  text-lg mt-6 p-2'>linkedin.com/in/sabrina</button></Link>
+        <Link href="https://www.linkedin.com/in/sabrina-shafer-56bb392ba/"><button className='bg-primary text-white rounded-full tracking-wide btn-block text-center font-Unbuntu text-lg mt-6 p-2'>linkedin.com/in/sabrina</button></Link>
         </div>
       </section>
 
@@ -27,7 +27,7 @@ export default function Home() {
           </figure>
           <div className="card-body">
 
-            <h2 className="card-title pb-4 pl-24 text-3xl">
+            <h2 className="card-title pb-4 pl-24 text-3xl font-Unbuntu">
               Contact
             </h2>
 
