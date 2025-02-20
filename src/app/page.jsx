@@ -7,7 +7,7 @@ import Image from "next/image"
 export default function Home() {
   return (
     <>
-    <div className='flex justify-center'>
+    <div className='flex justify-center '>
     <section className=' m-10 mt-20 '>
       <h1 className="text-8xl font-bold mb-4">Hello, <br></br>I'm Sabrina!</h1>
       <p className='max-w-xl text-xl'>I am a vocational school student for coding as well as a highschool student.

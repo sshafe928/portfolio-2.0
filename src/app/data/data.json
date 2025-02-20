@@ -6,6 +6,8 @@
     "image": "https://res.cloudinary.com/dy2nnbnek/image/upload/v1739776481/Screenshot_2_xasz3i.png",
     "alt": "React blog site",
     "collaborators": "red4cted25",
+    "language" : "HTML  CSS",
+    "date":"2024",
     "link": "https://github.com/sshafe928/react_blog.git"
     },
     {
@@ -14,7 +16,9 @@
     "description": "This quiz application was used to learn basic React application. This was used to reinforce the ideas of basic React functionality.",
     "image": "https://res.cloudinary.com/dy2nnbnek/image/upload/v1739776485/Screenshot_4_jyhra7.png",
     "alt": "Quiz site",
-    "collaborators": "none",
+    "collaborators": "None",
+    "language" : "HTML  CSS",
+    "date":"2024",
     "link": "https://github.com/sshafe928/quiz_application.git"
     },
     {
@@ -24,6 +28,8 @@
     "image": "https://res.cloudinary.com/dy2nnbnek/image/upload/v1739776487/Screenshot_5_jdja0d.png",
     "alt": "Capstone site",
     "collaborators": "vedantsingh23, stryderbateman",
+    "language" : "HTML  CSS",
+    "date":"2024",
     "link": "https://github.com/sshafe928/Shutterscope.git"
     },
     {
@@ -32,7 +38,9 @@
     "description": "This storage site was used to teach myself how to connect mongoDB to a website.",
     "image": "https://res.cloudinary.com/dy2nnbnek/image/upload/v1739776483/Screenshot_3_ma94xu.png",
     "alt": "Event Site",
-    "collaborators": "none",
+    "collaborators": "None",
+    "language" : "HTML  CSS",
+    "date":"2024",
     "link": "https://github.com/sshafe928/event-site.git"
     },
     {
@@ -41,7 +49,9 @@
     "description": "This is a website that is created for competing in FBLA. The topic was creating a financial tracker app for students.",
     "image": "https://res.cloudinary.com/dy2nnbnek/image/upload/v1739777445/Screenshot_6_rxdlkc.png",
     "alt": "FBLA site",
-    "collaborators": "DerpNerdd, DanielFreeman068",
+    "collaborators": "DerpNerddDanielFreeman068",
+    "language" : "HTML  CSS",
+    "date":"2024",
     "link": "https://github.com/sshafe928/FBLA-coding-and-programming.git"
     }
 ]

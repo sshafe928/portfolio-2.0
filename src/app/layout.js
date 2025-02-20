@@ -21,42 +21,51 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#E2EAFC] overflow-x-hidden`}
-      >
-        <header className="flex w-full py-8 px-6">
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#E2EAFC] min-h-screen flex flex-col`}>
+        {/* Header */}
+        <header className="w-full py-8 px-6">
           <nav className="flex w-full justify-between items-center gap-4 text-2xl">
             <div className="ml-4">Sabrina Shafer</div>
             <div className="flex gap-10 mr-4 text-black text-base">
               <Link href="/">About Me</Link>
               <Link href="/work">Work</Link>
-              <Link href="/resume" >Resume</Link>
-              <Link href="/contact" className="bg-[#E6AF2E] pr-1 pl-1 rounded-full">Get in Touch!</Link>
+              <Link href="/resume">Resume</Link>
+              <Link href="/contact" className="bg-[#E6AF2E] px-4 py-1 rounded-full hover:bg-[#d9a52c] transition-colors">
+                Get in Touch!
+              </Link>
             </div>
           </nav>
         </header>
-        
-        {children}
 
+        {/* Main content */}
+        <main className="flex-grow">
+          {children}
+        </main>
 
-        <footer className="bg-[#31363F] flex-auto w-screen pb-6 pt-6 motion-translate-y-in-[100%] motion-opacity-in-[0%] motion-blur-in-[5px] motion-duration-[0.45s] motion-duration-[0.53s]/translate">
-          <div className="space-y-4 ">
-              <div className="flex justify-center space-x-6">
-                  <Link href="#"><FaInstagram /></Link>
-                  <Link href="#"><FaGithub /></Link>
-                  <Link href="#"><FaLinkedin /></Link>
-              </div>
-      
-              <div className="flex justify-center">
-                  <ul className="flex space-x-8">
-                      <li><Link href="#">Contact Me</Link></li>
-                      <li><Link href="#">My Services</Link></li>
-                      <li><Link href="#">Privacy Policy</Link></li>
-                      <li><Link href="#">Terms & Conditions</Link></li>
-                      <li><Link href="#">Career</Link></li>
-                  </ul>
-              </div>
-      
+        {/* Footer */}
+        <footer className="bg-[#31363F] w-full pb-6 pt-6 mt-auto">
+          <div className="space-y-4">
+            <div className="flex justify-center space-x-6">
+              <Link href="#" className="text-white hover:text-gray-300 transition-colors">
+                <FaInstagram />
+              </Link>
+              <Link href="#" className="text-white hover:text-gray-300 transition-colors">
+                <FaGithub />
+              </Link>
+              <Link href="#" className="text-white hover:text-gray-300 transition-colors">
+                <FaLinkedin />
+              </Link>
+            </div>
+
+            <div className="flex justify-center">
+              <ul className="flex flex-wrap justify-center space-x-8 text-white">
+                <li><Link href="#" className="hover:text-gray-300 transition-colors">Contact Me</Link></li>
+                <li><Link href="#" className="hover:text-gray-300 transition-colors">My Services</Link></li>
+                <li><Link href="#" className="hover:text-gray-300 transition-colors">Privacy Policy</Link></li>
+                <li><Link href="#" className="hover:text-gray-300 transition-colors">Terms & Conditions</Link></li>
+                <li><Link href="#" className="hover:text-gray-300 transition-colors">Career</Link></li>
+              </ul>
+            </div>
           </div>
         </footer>
       </body>

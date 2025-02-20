@@ -7,28 +7,32 @@ import Image from 'next/image'
 const WorkPage = () => {
   return (
     <>
-    <h1 className="m-2 text-2xl font-bold text-center">Projects</h1>
-    <div className="container flex text-center">
-      
-      <ul>
+    <h1 className="m-6 text-2xl font-bold text-center">Projects</h1>
+    <div className="container mx-auto px-4">
+      <div className="flex flex-wrap justify-center gap-14">
         {projects.map((project) => (
-          <li key={project.id} className="border-2 bg-[#fff] p-2 m-2">
-            {/* Polaroid-style image */}
-            <div className="relative w-48 h-auto mx-auto mb-2" >
-              <Image
-                src={project.image}  // Corrected to use project.image
-                width={200}
-                height={200} // Same width and height to keep it square-like
-                alt="Project image"
-                className="object-cover"
-              />
-              {/* Adding a 'caption' effect to the bottom of the image */}
-              <div className="absolute bottom-0 w-full text-center bg-white px-2 text-xs text-gray-700">{project.title}</div>
+          <Link 
+          href={`/work/${project.id}`}
+          className="text-gray-900 font-medium hover:text-gray-800 transition-colors"
+        >
+          <div key={project.id} className="group w-64 transition-transform duration-200 hover:-translate-y-2 ">
+            {/* Polaroid card */}
+            <div className="bg-white p-4 shadow-lg rounded-sm">
+              {/* Image container with fixed aspect ratio */}
+              <div className="relative aspect-[5/5] mb-4">
+                <Image src={project.image} fill alt={project.title} className="object-cover rounded-sm"/>
+              </div>
+              {/* Title area - thicker bottom section */}
+              <div className="pt-2 pb-4 text-center">
+                
+                  {project.title}
+                
+              </div>
             </div>
-            <Link href={`/work/${project.id}`}>{project.title}</Link>
-          </li>
+          </div>
+          </Link>
         ))}
-      </ul>
+      </div>
     </div>
 
     </>
