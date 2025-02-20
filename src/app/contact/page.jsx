@@ -3,7 +3,7 @@ import Image from 'next/image'
 const ContactPage = () => {
   return (
     <>
-    <div className=''>
+    <div className='justify-center'>
       <Image/>
       <div className='flex flex-col  '>
         <h1 className='text-title font-ChaeRegular text-[14rem] -my-16'>Portfolio</h1>
