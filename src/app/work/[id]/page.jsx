@@ -19,6 +19,7 @@ export default async function ProjectPage({params}){
 
     return (
         <>
+        
             <div className="mx-4 md:mx-8 lg:mx-20 my-14 overflow-hidden rounded-lg shadow-lg bg-white">
                 <div className="relative flex flex-col md:flex-row">
                     {/* Exit Button - Absolute positioned */}
