@@ -56,7 +56,7 @@ const TypewriterEffect = () => {
 export default function Home() {
   return (
     <>
-      <div className='flex flex-col justify-center overflow-x-hidden lg:flex-row'>
+      <div className='flex flex-col justify-center overflow-x-hidden lg:flex-row lg:justify-center '>
         <section className='m-10 mt-20'>
         <h1 className="text-6xl sm:text-8xl md:text-8xl lg:text-8xl xl:text-8xl font-bold mb-4 text-title font-Unbuntu">
           <TypewriterEffect />
@@ -80,7 +80,7 @@ export default function Home() {
 
         <section className='m-8'>
           <div className="card bg-base-100 w-[24rem] shadow-xl">
-            <figure className='bg-[#c0cae0]'>
+            <figure className='bg-[#b8c7e5]'>
               <Image 
                 src="https://res.cloudinary.com/dy2nnbnek/image/upload/v1740175591/20241129_164805_x6bu1i.png" 
                 width={300} 
@@ -89,7 +89,7 @@ export default function Home() {
               />
             </figure>
             <div className="card-body">
-              <h2 className="card-title pb-4 pl-24 text-3xl font-Unbuntu">
+              <h2 className="card-title pb-4 pl-24 -mt-3 text-3xl font-Unbuntu">
                 Contact
               </h2>
 
