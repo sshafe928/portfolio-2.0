@@ -1,7 +1,9 @@
+// src/app/layout.js
 import { Geist, Geist_Mono } from "next/font/google";
 import { FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
 import "./globals.css";
 import Link from "next/link";
+import Navigation from "./components/navigation";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -23,18 +25,8 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background min-h-screen flex flex-col`}>
         {/* Header */}
-        <header className="w-full py-8 px-6 font-Unbuntu">
-          <nav className="flex w-full justify-between items-center gap-4 text-2xl">
-            <div className="ml-4 text-4xl">Sabrina Shafer</div>
-            <div className="flex gap-10 mr-4 text-black text-base">
-              <Link href="/">About Me</Link>
-              <Link href="/work">Work</Link>
-              <Link href="/resume">Resume</Link>
-              <Link href="/contact" className="bg-special px-4 py-1 rounded-full hover:bg-special2 transition-colors">
-                Get in Touch!
-              </Link>
-            </div>
-          </nav>
+        <header className="w-full py-8 px-6 font-Unbuntu relative">
+          <Navigation />
         </header>
 
         {/* Main content */}
@@ -58,7 +50,7 @@ export default function RootLayout({ children }) {
             </div>
 
             <div className="flex justify-center">
-              <ul className="flex flex-wrap justify-center space-x-8 text-white font-Unbuntu">
+              <ul className="flex flex-wrap justify-center gap-4 px-4 text-white font-Unbuntu">
                 <li><Link href="#" className="hover:text-gray-300 transition-colors">Contact Me</Link></li>
                 <li><Link href="#" className="hover:text-gray-300 transition-colors">My Services</Link></li>
                 <li><Link href="#" className="hover:text-gray-300 transition-colors">Privacy Policy</Link></li>
